@@ -39,3 +39,11 @@ body {
     min-height: 20px;
     flex-shrink: 0;
 }
+
+.inputs {
+    margin: 100px;
+}
+
+button {
+    min-width: 100px;
+}
