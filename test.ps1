@@ -1,4 +1,9 @@
 cd Website
+
+
+
+
+
 # Build project
 .\gradlew :app:build
 

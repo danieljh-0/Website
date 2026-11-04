@@ -26,6 +26,10 @@ dependencies {
     implementation(libs.guava)
 
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
+
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    implementation("org.postgresql:postgresql:42.7.14")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
