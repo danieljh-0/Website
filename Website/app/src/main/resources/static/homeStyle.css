@@ -1,3 +1,11 @@
+:root {
+    --input-box-width: 275px;
+    --background-colour: #FFFBE8;
+    --accent-colour: #222222;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -10,13 +18,13 @@ body {
     height: calc(100vh - 16px);
     display: flex;
     flex-direction: column;
-    background-color: #FFFBE8;
+    background-color: var(--background-colour);
 }
 
 .header {
     display: flex;
-    background-color: #222222;
-    color: #FFFBE8;
+    background-color: var(--accent-colour);
+    color: var(--background-colour);
     height: 100px;
     font-family: "Candara", serif;
     justify-content: center;
@@ -28,7 +36,7 @@ body {
     min-height: 0;
     border-style: solid;
     border-width: 1px;
-    border-color: #222222;
+    border-color: var(--accent-colour);
     flex: 1;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -58,13 +66,13 @@ button {
 label {
     display: flex;
     flex-direction: row;
-    max-width: 250px;
+    max-width: var(--input-box-width);
     justify-content: space-between;
 }
 
 .right {
     display: flex;
-    max-width: 250px;
+    max-width: var(--input-box-width);
     flex-direction: row;
     justify-content: end;
 }
