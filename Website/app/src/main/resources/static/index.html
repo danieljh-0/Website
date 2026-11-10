@@ -13,45 +13,71 @@
         <h1>ACCOUNTS</h1>
     </div>
 
-    <div class="space">
-
-    </div>
+    <div class="space"></div>
 
     <div class = "mainBody">
 
-        <div class="inputs">
+        <div class="hbox">
+
+            <div class="inputs">
+
+                <p class = "subHeader">Add Income</p>
+
+                <label>Amount:
+                    <input type="text" id="txtAmount">
+                </label><br>
+                <label>Description:
+                    <input type="text" id="txtDescription">
+                </label><br>
+                <label>Category:
+                    <input type="text" id="txtCategory">
+                </label><br>
+                <label>Date:
+                    <input class="datePicker" type="date" id="txtDate" max="2100-12-31" min="1900-01-01">
+                </label><br>
+
+                <div class = "right">
+                    <button onclick="saveIncome()">Save</button>
+                </div>
 
 
-            <p class = "subHeader">Add Income</p>
+                <div class = "space"></div>
 
-            <label>Amount:
-                <input type="text" id="txtAmount">
-            </label><br>
-            <label>Description:
-                <input type="text" id="txtDescription">
-            </label><br>
-            <label>Category:
-                <input type="text" id="txtCategory">
-            </label><br>
-            <label>Date:
-                <input class="datePicker" type="date" id="txtDate" max="2100-12-31" min="1900-01-01">
-            </label><br>
-
-            <div class = "right">
-                <button onclick="saveIncome()">Save</button>
+                <!--<label>
+                    <input type="text">
+                </label>
+                <button>Add Expense</button>-->
             </div>
 
+            <div class="inputs">
 
-            <div class = "space"></div>
+                <p class = "subHeader">Add Expense</p>
 
-            <!--<label>
-                <input type="text">
-            </label>
-            <button>Add Expense</button>-->
+                <label>Amount:
+                    <input type="text" id="txtAmountExpense">
+                </label><br>
+                <label>Description:
+                    <input type="text" id="txtDescriptionExpense">
+                </label><br>
+                <label>Category:
+                    <input type="text" id="txtCategoryExpense">
+                </label><br>
+                <label>Date:
+                    <input class="datePicker" type="date" id="txtDateExpense" max="2100-12-31" min="1900-01-01">
+                </label><br>
+
+                <div class = "right">
+                    <button onclick="saveExpense()">Save</button>
+                </div>
+
+
+                <div class = "space"></div>
+
+            </div>
+
         </div>
 
     </div>
-
 
 </body>
 </html>

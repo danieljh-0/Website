@@ -80,3 +80,10 @@ label {
 .datePicker {
     width: 177px;
 }
+
+.hbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50vw;
+}
