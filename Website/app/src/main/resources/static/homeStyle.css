@@ -76,3 +76,7 @@ label {
     flex-direction: row;
     justify-content: end;
 }
+
+.datePicker {
+    width: 177px;
+}
