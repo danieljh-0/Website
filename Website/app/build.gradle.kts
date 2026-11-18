@@ -31,7 +31,6 @@ dependencies {
 
     implementation("org.postgresql:postgresql:42.7.14")
 
-//    implementation("org.hibernate.orm:hibernate-core:8.0.0.Beta4")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
