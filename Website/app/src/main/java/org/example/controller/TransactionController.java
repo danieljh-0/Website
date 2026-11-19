@@ -1,12 +1,13 @@
 package org.example.controller;
 
 import org.example.repository.TransactionRepository;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.example.entity.transaction;
-import org.springframework.web.bind.annotation.RequestBody;
 
-@Controller
+import java.util.List;
+
+@RestController
+@RequestMapping("/transactions")
 public class TransactionController {
 
     private final TransactionRepository repository;
@@ -19,6 +20,11 @@ public class TransactionController {
     @PostMapping
     public transaction saveTransaction(@RequestBody transaction trans) {
         return repository.save(trans);
+    }
+
+    @GetMapping
+    public List<transaction> getAllAuthors() {
+        return repository.findAll();
     }
 
 }
